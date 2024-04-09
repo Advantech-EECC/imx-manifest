@@ -36,9 +36,9 @@ Each branch has detailed READMEs describing exact syntax.
 Examples
 --------
 
-To download the 6.6.3-1.0.0 release
+To download the 6.6.3-1.0.0-adv release
 ```
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-nanbield -m imx-6.6.3-1.0.0.xml
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-nanbield-adv -m imx-6.6.3-1.0.0-adv.xml
 ```
 
 Setup the build folder for a BSP release:
@@ -63,7 +63,7 @@ components using our `meta-imx` layer.
 Examples:
 - Setup for XWayland.
 ```
-$: MACHINE=imx8mnevk DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
+$: MACHINE=rom2620-ed91 DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
 ```
 
 Build an image:
