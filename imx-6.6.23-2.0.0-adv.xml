@@ -3,6 +3,6 @@
 
 	<include name="imx-6.6.23-2.0.0.xml"/>
 	<remote name="meta-eecc-nxp" fetch="https://github.com/Advantech-EECC"/>
-	<project name="meta-eecc-nxp" remote="meta-eecc-nxp" path="sources/meta-eecc-nxp" revision="210b3eff2f0ccddd5c1d832dcb2abce299d3068f" />
+	<project name="meta-eecc-nxp" remote="meta-eecc-nxp" path="sources/meta-eecc-nxp" revision="e29e590f9bb1e23bf7b66f98a87b1939b8962173" />
 
 </manifest>
