@@ -44,12 +44,11 @@ Examples
 
 To download the 6.6.36-2.1.0 release
 ```
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-scarthgap -m imx-6.6.36-2.1.0.xml
+$: repo init -u https://github.com/Advantech-EECC/imx-manifest -b imx-linux-scarthgap-adv -m imx-6.6.36-2.1.0-adv.xml
 ```
 To download the 6.6.23-2.0.0 release
 ```
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-scarthgap -m imx-6.6.23-2.0.0.xml
-```
+$: repo init -u https://github.com/Advantech-EECC/imx-manifest -b imx-linux-scarthgap-adv -m imx-6.6.23-2.0.0-adv.xml
 
 Setup the build folder for a BSP release:
 -----------------------------------------
@@ -73,7 +72,7 @@ components using our `meta-imx` layer.
 Examples:
 - Setup for XWayland.
 ```
-$: MACHINE=imx8mnevk DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
+$: MACHINE=rom2620-ed91 DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
 ```
 
 Build an image:
