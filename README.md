@@ -33,7 +33,7 @@ Download the Yocto Project BSP
 ```
 $: mkdir <release>
 $: cd <release>
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b <branch name> [ -m <release manifest>]
+$: repo init -u https://github.com/Advantech-EECC/imx-manifest -b <branch name> [ -m <release manifest>]
 $: repo sync
 ```
 
@@ -46,9 +46,6 @@ To download the 6.6.36-2.1.0 release
 ```
 $: repo init -u https://github.com/Advantech-EECC/imx-manifest -b imx-linux-scarthgap-adv -m imx-6.6.36-2.1.0-adv.xml
 ```
-To download the 6.6.23-2.0.0 release
-```
-$: repo init -u https://github.com/Advantech-EECC/imx-manifest -b imx-linux-scarthgap-adv -m imx-6.6.23-2.0.0-adv.xml
 
 Setup the build folder for a BSP release:
 -----------------------------------------
@@ -73,6 +70,8 @@ Examples:
 - Setup for XWayland.
 ```
 $: MACHINE=rom2620-ed91 DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
+$: MACHINE=rsb3720 UBOOT_CONFIG=6G DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
+$: MACHINE=rom5722-db2510 UBOOT_CONFIG=6G DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
 ```
 
 Build an image:
@@ -89,3 +88,9 @@ Image Name           | Description
 imx-image-core       | core image with basic graphics and no multimedia
 imx-image-multimedia | image with multimedia and graphics
 imx-image-full       | image with multimedia and machine learning and Qt
+
+
+Advantech-specific changes:
+---------------------------
+
+https://github.com/Advantech-EECC/meta-eecc-nxp
