@@ -77,7 +77,19 @@ Examples:
 - Setup for XWayland.
 ```
 $: MACHINE=rom2620-ed91 DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
+$: MACHINE=rsb3720 DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
+$: MACHINE=rom5722-db2510 DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
 ```
+
+Enabling the Advantech BSP Layer:
+---------------------------------
+
+To access the Advantech machine configurations, the Advantech BSP layer must be enabled. To enable the layer, add the following line to the end of `conf/bblayers.conf` file.
+```
+BBLAYERS += "${BSPDIR}/sources/meta-eecc-nxp"
+```
+
+For further information refer the Yocto development manual (https://docs.yoctoproject.org/5.0.5/dev-manual/layers.html#enabling-your-layer)
 
 Build an image:
 ---------------
