@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+	<include name="imx-6.6.52-2.2.0.xml"/>
+	<remote name="meta-eecc-nxp" fetch="https://github.com/Advantech-EECC"/>
+	<project name="meta-eecc-nxp" remote="meta-eecc-nxp" path="sources/meta-eecc-nxp" revision="aed9941db9152a8993550030d1a3821c545c08c5" />
+
+</manifest>

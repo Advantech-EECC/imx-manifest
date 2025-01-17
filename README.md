@@ -33,7 +33,7 @@ Download the Yocto Project BSP
 ```
 $: mkdir <release>
 $: cd <release>
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b <branch name> [ -m <release manifest>]
+$: repo init -u https://github.com/Advantech-EECC/imx-manifest -b <branch name> [ -m <release manifest>]
 $: repo sync
 ```
 
@@ -44,7 +44,7 @@ Examples
 
 To download the 6.6.52-2.2.0 release
 ```
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-scarthgap -m imx-6.6.52-2.2.0.xml
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-scarthgap -m imx-6.6.52-2.2.0-adv.xml
 ```
 To download the 6.6.36-2.1.0 release
 ```
@@ -77,6 +77,7 @@ Examples:
 - Setup for XWayland.
 ```
 $: MACHINE=rom2620-ed91 DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
+$: MACHINE=rom2820-ed93 DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
 $: MACHINE=rsb3720 DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
 $: MACHINE=rom5722-db2510 DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
 ```
@@ -105,3 +106,9 @@ Image Name           | Description
 imx-image-core       | core image with basic graphics and no multimedia
 imx-image-multimedia | image with multimedia and graphics
 imx-image-full       | image with multimedia and machine learning and Qt
+
+Source code:
+------------
+
+imx-...-adv.xml use the base NXP manifest, and the reference to the layer,
+which is located at https://github.com/Advantech-EECC/meta-eecc-nxp
