@@ -44,7 +44,7 @@ Examples
 
 To download the 6.6.52-2.2.0 release
 ```
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-scarthgap -m imx-6.6.52-2.2.0-adv.xml
+$: repo init -u https://github.com/Advantech-EECC/imx-manifest -b imx-linux-scarthgap-adv -m imx-6.6.52-2.2.0-adv.xml
 ```
 To download the 6.6.36-2.1.0 release
 ```
