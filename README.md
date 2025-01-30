@@ -53,6 +53,7 @@ $: repo init -u https://github.com/Advantech-EECC/imx-manifest -b imx-linux-scar
 To download the 6.6.23-2.0.0 release
 ```
 $: repo init -u https://github.com/Advantech-EECC/imx-manifest -b imx-linux-scarthgap-adv -m imx-6.6.23-2.0.0-adv.xml
+```
 
 Setup the build folder for a BSP release:
 -----------------------------------------
