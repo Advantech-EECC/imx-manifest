@@ -44,7 +44,7 @@ Examples
 
 To download the 6.12.3-1.0.0 release
 ```
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-styhead -m imx-6.12.3-1.0.0.xml
+$: repo init -u https://github.com/Advantech-EECC/imx-manifest -b imx-linux-styhead-adv -m imx-6.12.3-1.0.0-adv.xml
 ```
 
 Setup the build folder for a BSP release:
@@ -69,8 +69,20 @@ components using our `meta-imx` layer.
 Examples:
 - Setup for XWayland.
 ```
-$: MACHINE=imx8mnevk DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
+$: MACHINE=rom2620-ed91 DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
+$: MACHINE=rsb3720 DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
+$: MACHINE=rom5722-db2510 DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
 ```
+
+Enabling the Advantech BSP Layer:
+---------------------------------
+
+To access the Advantech machine configurations, the Advantech BSP layer must be enabled. To enable the layer, add the following line to the end of `conf/bblayers.conf` file.
+```
+BBLAYERS += "${BSPDIR}/sources/meta-eecc-nxp"
+```
+
+For further information refer the Yocto development manual (https://docs.yoctoproject.org/5.1/dev-manual/layers.html#enabling-your-layer)
 
 Build an image:
 ---------------
