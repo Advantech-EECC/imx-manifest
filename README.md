@@ -58,6 +58,10 @@ To download the 6.12.49-2.2.0 release
 ```
 $: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-walnascar -m imx-6.12.49-2.2.0.xml
 ```
+To download the 6.12.34-2.1.0 release
+```
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-walnascar -m imx-6.12.34-2.1.0.xml
+```
 
 Setup the build folder for a BSP release:
 -----------------------------------------
