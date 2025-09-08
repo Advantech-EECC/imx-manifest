@@ -46,6 +46,10 @@ To download the 6.12.20-2.0.0 release
 ```
 $: repo init -u https://github.com/Advantech-EECC/imx-manifest -b imx-linux-walnascar-adv -m imx-6.12.20-2.0.0-adv.xml
 ```
+To download the 6.12.34-2.1.0 release
+```
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-walnascar -m imx-6.12.34-2.1.0.xml
+```
 
 Setup the build folder for a BSP release:
 -----------------------------------------
