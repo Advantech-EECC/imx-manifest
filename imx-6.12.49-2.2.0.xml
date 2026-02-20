@@ -35,11 +35,12 @@
   <project name="meta-virtualization" remote="yp" path="sources/meta-virtualization" revision="38008d99d5bedc7d9769b9e95e3d6019a2df1698" upstream="walnascar" />
 
 <!-- Workaround for 'meta-imx':
-	Commit a1b7dd9dcece493bc01ab615307c586f5ec38958 is one commit behind
+	Commit 1cfbbb8f9ce1d6071775ea6083b79d98597c8206 is four commits behind
 	walnascar-6.12.49-2.2.0, in order to revert a fix that was
-        retroactively fixed by Ternsorflow, making that fix wrong.
+        retroactively fixed by Ternsorflow, making that fix wrong. XP
+	changed its rel_imx_6.12.49_2.2.0 tag to this commit
 -->
-  <project name="meta-imx" remote="imx" path="sources/meta-imx" revision="a1b7dd9dcece493bc01ab615307c586f5ec38958" upstream="walnascar-6.12.49-2.2.0">
+  <project name="meta-imx" remote="imx" path="sources/meta-imx" revision="1cfbbb8f9ce1d6071775ea6083b79d98597c8206" upstream="walnascar-6.12.49-2.2.0">
      <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh" />
      <linkfile src="README.md" dest="README.md" />
   </project>
