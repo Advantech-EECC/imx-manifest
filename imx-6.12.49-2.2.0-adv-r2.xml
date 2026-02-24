@@ -5,7 +5,7 @@
 
 	<remote name="advantech-eecc" fetch="https://github.com/Advantech-EECC"/>
 
-	<project name="meta-eecc-nxp" remote="advantech-eecc" path="sources/meta-eecc-nxp" revision="09a3b496cc885d1a2b43cbb8dae3eca069f0eca6" />
+	<project name="meta-modular-bsp-nxp" remote="advantech-eecc" path="sources/meta-modular-bsp-nxp" revision="09a3b496cc885d1a2b43cbb8dae3eca069f0eca6" />
 
 	<project name="meta-nxp-security-reference-design" remote="advantech-eecc" path="sources/meta-nxp-security-reference-design" revision="walnascar-6.12.49-2.2.0-adv" />
 <!--
