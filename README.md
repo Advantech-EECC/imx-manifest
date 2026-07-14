@@ -44,7 +44,7 @@ Examples
 
 To download the 6.18.2-1.0.0 release
 ```
-$: repo init -u https://github.com/Advantech-EECC/imx-manifest -b imx-linux-whinlatter-adv -m imx-6.18.2-1.0.0-adv.xml
+$: repo init -u https://github.com/Advantech-EECC/imx-manifest -b imx-linux-whinlatter-adv -m imx-6.18.2-1.0.0-adv-r3.xml
 ```
 
 Setup the build folder for a BSP release:
