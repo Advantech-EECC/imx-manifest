@@ -44,7 +44,7 @@ Examples
 
 To download the 6.12.3-1.0.0 release
 ```
-$: repo init -u https://github.com/Advantech-EECC/imx-manifest -b imx-linux-styhead-adv -m imx-6.12.3-1.0.0-adv.xml
+$: repo init -u https://github.com/Advantech-EECC/imx-manifest -b imx-linux-styhead-adv -m imx-6.12.3-1.0.0-adv-r2.xml
 ```
 
 Setup the build folder for a BSP release:
