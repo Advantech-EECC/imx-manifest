@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+	<include name="imx-6.12.49-2.2.0.xml"/>
+
+	<remote name="advantech-eecc" fetch="https://github.com/Advantech-EECC"/>
+
+	<project name="meta-modular-bsp-nxp" remote="advantech-eecc" path="sources/meta-modular-bsp-nxp" revision="36bf7c64309a784660bd01c62dd49d1e5fb311ff" />
+
+	<project name="meta-modular-bsp-extra" remote="advantech-eecc" path="sources/meta-modular-bsp-extra" revision="b7d09608df38868ba3c940cfaaed0c6da569224e" >
+		<linkfile src="tools/adv-imx-setup-release.sh" dest="adv-imx-setup-release.sh"/>
+	</project>
+
+</manifest>
