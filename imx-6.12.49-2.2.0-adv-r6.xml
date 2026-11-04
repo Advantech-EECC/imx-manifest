@@ -5,7 +5,7 @@
 
 	<remote name="advantech-eecc" fetch="https://github.com/Advantech-EECC"/>
 
-	<project name="meta-modular-bsp-nxp" remote="advantech-eecc" path="sources/meta-modular-bsp-nxp" revision="4ead86e37124fbc8b87b111c82299ef96e959831" />
+	<project name="meta-modular-bsp-nxp" remote="advantech-eecc" path="sources/meta-modular-bsp-nxp" revision="0d5d0f463fc1251950f20f6b790d93f2c2aa2fd8" />
 
 	<project name="meta-modular-bsp-extra" remote="advantech-eecc" path="sources/meta-modular-bsp-extra" revision="a3e381233e7a9fe7d11c85be5894a32cfc1ee3e7" >
 		<linkfile src="tools/adv-imx-setup-release.sh" dest="adv-imx-setup-release.sh"/>
